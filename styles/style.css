@@ -24,7 +24,7 @@ body {
 main {
   background: url("/images/bg-pattern-desktop.svg") no-repeat left -450px top -250px;
   background-size: 100%;
-  background-color: whitesmoke !important;
+  background-color: white !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +35,7 @@ main {
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  overflow: hidden;
+  position: relative !important;
 }
 
 main:hover {
@@ -48,16 +48,88 @@ main:hover {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: -10%;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .at {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 10 !important;
   position: absolute;
-  left: 12%;
-  -webkit-transform: translateY(60px);
-          transform: translateY(60px);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transform: translate(-95px, 30px);
+          transform: translate(-95px, 30px);
+}
+
+.faq-section {
+  width: 60%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 80px;
+}
+
+.faq-section h1 {
+  color: #1d1e35;
+}
+
+.accordion {
+  min-height: 90%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.accordion-item {
+  border-bottom: solid 1px #e7e7e9;
+  padding: 10px 0;
+}
+
+.accordion-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #1d1e35;
+  font-weight: 700;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 0;
+}
+
+.question .arrow {
+  width: 13px;
+  height: 10px;
+}
+
+.answer {
+  color: grey;
+  margin-top: 5px;
+  margin-right: 12px;
+  line-height: 18px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
