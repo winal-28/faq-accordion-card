@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+}
+
+main {
+  background: url("/images/bg-pattern-desktop.svg") no-repeat left -450px top -250px;
+  background-size: 100%;
+  background-color: whitesmoke !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 450px;
+  width: 850px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.24);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+main:hover {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.473);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.473);
+}
+
+.desktop-illus {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: -10%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.at {
+  position: absolute;
+  left: 12%;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/*# sourceMappingURL=style.css.map */
